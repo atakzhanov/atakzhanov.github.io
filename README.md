@@ -29,7 +29,18 @@ http://localhost:8787/me/
 
 ## GitHub Pages
 
-This repository is intended to be published as a project GitHub Pages site.
+This repository is intended to be published as a personal GitHub Pages site:
+
+```text
+https://atakzhanov.github.io/
+```
+
+The GitHub repository must be named exactly:
+
+```text
+atakzhanov.github.io
+```
+
 Enable Pages in `Settings -> Pages` with:
 
 - Source: `Deploy from a branch`
@@ -39,5 +50,5 @@ Enable Pages in `Settings -> Pages` with:
 The site will be available at:
 
 ```text
-https://southpadre.github.io/resume/
+https://atakzhanov.github.io/
 ```
