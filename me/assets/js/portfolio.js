@@ -52,7 +52,7 @@ const translations = {
       e1company: "АО Консалт Плюс - Фрегат",
       e1date: "09.2023 - 03.2026",
       e1b:
-        "Фрегат: корпоративная MDM-платформа для централизованного управления мастер-данными и интеграции внутренних информационных систем.",
+        "Корпоративная MDM-платформа для централизованного управления мастер-данными и интеграции внутренних информационных систем.",
       e2h: "DevOps-инженер - Сбер",
       e2b:
         "Сопровождение высоконагруженных банковских сервисов, CI/CD, администрирование Linux/Windows, контейнеризация, мониторинг и отказоустойчивость системы «Сенат».",
@@ -60,13 +60,13 @@ const translations = {
     },
     impact: {
       title: "Ключевой вклад",
-      i1: "Переводил потребности заказчика в функциональные и нефункциональные требования, бизнес-правила и задачи для разработки.",
-      i2: "Проектировал интеграции внутренних сервисов через REST API, gRPC и Kafka; готовил API-контракты и форматы обмена.",
-      i3: "Описывал модель данных MDM: сущности, атрибуты, связи, справочники и правила обработки мастер-данных.",
-      i4: "Документировал валидации, ошибки, структуры запросов/ответов и диаграммы взаимодействия сервисов.",
-      i5: "Согласовывал требования с заказчиком, архитекторами и разработчиками; поддерживал команду в процессе реализации.",
-      i6: "Помогал QA готовить тестовые сценарии, анализировал дефекты и уточнял требования по итогам тестирования.",
-      i7: "Проводил демонстрации функциональности заказчику и участвовал в приемке перед промышленной эксплуатацией.",
+      i1: "Довел проект от первичного обследования до релиза, удерживая в одном контуре цели бизнеса, требования и решения команды.",
+      i2: "Описал состояние as-is и сформировал целевую модель to-be, превратив изменения бизнес-процессов в понятный план реализации.",
+      i3: "Координировал работу дизайнеров, тестировщиков и разработчиков, синхронизируя пользовательские сценарии, спецификации, тесты и реализацию.",
+      i4: "Сформировал единую базу требований: бизнес-правила, API-контракты, модель данных, валидации и сценарии взаимодействия сервисов.",
+      i5: "Снизил неопределенность между бизнесом и разработкой за счет фасилитации решений с заказчиком, архитекторами и delivery-командой.",
+      i6: "Обеспечивал готовность к релизу через демо, подготовку к приемке, анализ дефектов и уточнение требований по итогам тестирования.",
+      i7: "Помог перевести MDM-продукт от концепции к релизной внутренней платформе с описанными интеграциями и эксплуатационными сценариями.",
     },
     resume: {
       title: "Резюме",
@@ -128,7 +128,7 @@ const translations = {
       e1company: "AO Consult Plus - Fregat",
       e1date: "Sep 2023 - Mar 2026",
       e1b:
-        "Fregat: corporate MDM platform for centralized master data management and integration of internal information systems.",
+        "Corporate MDM platform for centralized master data management and integration of internal information systems.",
       e2h: "DevOps Engineer - Sber",
       e2b:
         "Supported high-load banking services, CI/CD, Linux/Windows administration, containers, monitoring and reliability for the Senat corporate system.",
@@ -136,13 +136,13 @@ const translations = {
     },
     impact: {
       title: "Selected impact",
-      i1: "Translated stakeholder needs into functional and non-functional requirements, business rules and development-ready backlog items.",
-      i2: "Designed integrations between internal services using REST API, gRPC and Kafka; prepared API contracts and exchange formats.",
-      i3: "Modeled MDM data structures: entities, attributes, relationships, reference data and processing rules.",
-      i4: "Documented validation logic, error scenarios, request/response structures and service interaction diagrams.",
-      i5: "Aligned requirements with customers, architects and developers; supported implementation decisions throughout delivery.",
-      i6: "Helped QA prepare test scenarios, analyzed defects and refined requirements after testing.",
-      i7: "Presented functionality to stakeholders and participated in acceptance before production release.",
+      i1: "Led the project from initial discovery to production release, keeping business goals, requirements and delivery decisions aligned.",
+      i2: "Mapped the as-is process and shaped the to-be model, turning business process changes into a clear implementation plan.",
+      i3: "Coordinated designers, QA engineers and developers so user flows, specifications, test coverage and implementation moved together.",
+      i4: "Built a shared requirements base: business rules, API contracts, data model, validation logic and service interaction scenarios.",
+      i5: "Reduced ambiguity between business and engineering by facilitating decisions with stakeholders, architects and the delivery team.",
+      i6: "Supported release readiness through demos, acceptance preparation, defect analysis and requirement clarification after testing.",
+      i7: "Helped move the MDM product from concept to a releasable internal platform with documented integrations and operating scenarios.",
     },
     resume: {
       title: "Resume",
