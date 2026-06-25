@@ -29,13 +29,8 @@ http://localhost:8787/me/
 
 ## GitHub Pages
 
-For a personal GitHub Pages site, publish this repository as:
-
-```text
-<github-username>.github.io
-```
-
-Then enable Pages in `Settings -> Pages` with:
+This repository is intended to be published as a project GitHub Pages site.
+Enable Pages in `Settings -> Pages` with:
 
 - Source: `Deploy from a branch`
 - Branch: `main`
@@ -44,5 +39,5 @@ Then enable Pages in `Settings -> Pages` with:
 The site will be available at:
 
 ```text
-https://<github-username>.github.io/
+https://southpadre.github.io/resume/
 ```
