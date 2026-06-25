@@ -2,7 +2,7 @@ const translations = {
   ru: {
     title: "Такжанов Александр | Системный аналитик",
     description:
-      "Такжанов Александр - системный аналитик: MDM-платформы, API-интеграции, требования, модели данных и DevOps-бэкграунд.",
+      "Такжанов Александр - системный аналитик: проект Фрегат, MDM-платформы, API-интеграции, требования, модели данных и DevOps-бэкграунд.",
     menu: {
       experience: "Опыт",
       skills: "Навыки",
@@ -16,7 +16,7 @@ const translations = {
       lead:
         "Перевожу бизнес-задачи в понятные требования, API-контракты, модели данных и задачи для разработки сложных внутренних систем.",
       location: "Сербия",
-      availability: "Полная занятость - удаленно, гибрид, офис",
+      availability: "Полная занятость - удаленно, гибрид, офис; готов к релокации",
     },
     metrics: {
       experience: "лет в IT delivery",
@@ -29,7 +29,7 @@ const translations = {
       body:
         "Системный аналитик с 5+ годами опыта на стыке бизнес-требований, интеграций, данных и production-инфраструктуры. Специализируюсь на MDM-платформах, микросервисных системах и API-интеграциях.",
       target:
-        "Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации.",
+        "Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации. Готов к релокации.",
     },
     skills: {
       title: "Навыки",
@@ -49,10 +49,10 @@ const translations = {
     experience: {
       title: "Опыт",
       e1h: "Системный аналитик",
-      e1company: "АО Консалт Плюс - корпоративная MDM-платформа",
+      e1company: "АО Консалт Плюс - Фрегат",
       e1date: "09.2023 - 03.2026",
       e1b:
-        "Корпоративная MDM-платформа для централизованного управления мастер-данными и интеграции внутренних информационных систем.",
+        "Фрегат: корпоративная MDM-платформа для централизованного управления мастер-данными и интеграции внутренних информационных систем.",
       e2h: "DevOps-инженер - Сбер",
       e2b:
         "Сопровождение высоконагруженных банковских сервисов, CI/CD, администрирование Linux/Windows, контейнеризация, мониторинг и отказоустойчивость системы «Сенат».",
@@ -78,7 +78,7 @@ const translations = {
   en: {
     title: "Alexander Takzhanov | System Analyst",
     description:
-      "Alexander Takzhanov - System Analyst: MDM platforms, API integrations, requirements engineering, data modeling and DevOps background.",
+      "Alexander Takzhanov - System Analyst: Fregat project, MDM platforms, API integrations, requirements engineering, data modeling and DevOps background.",
     menu: {
       experience: "Experience",
       skills: "Skills",
@@ -92,7 +92,7 @@ const translations = {
       lead:
         "I turn business needs into precise requirements, API contracts, data models and development-ready tasks for complex internal systems.",
       location: "Serbia",
-      availability: "Full-time - remote, hybrid, on-site",
+      availability: "Full-time - remote, hybrid, on-site; open to relocation",
     },
     metrics: {
       experience: "years in IT delivery",
@@ -105,7 +105,7 @@ const translations = {
       body:
         "System Analyst with 5+ years of experience across business requirements, integrations, data and production infrastructure. I specialize in MDM platforms, microservice systems and API integrations.",
       target:
-        "Strong at connecting business stakeholders, architects, developers, QA and operations: from discovery and specification to acceptance and production-ready delivery.",
+        "Strong at connecting business stakeholders, architects, developers, QA and operations: from discovery and specification to acceptance and production-ready delivery. Open to relocation.",
     },
     skills: {
       title: "Skills",
@@ -125,10 +125,10 @@ const translations = {
     experience: {
       title: "Experience",
       e1h: "System Analyst",
-      e1company: "AO Consult Plus - Enterprise MDM platform",
+      e1company: "AO Consult Plus - Fregat",
       e1date: "Sep 2023 - Mar 2026",
       e1b:
-        "Corporate MDM platform for centralized master data management and integration of internal information systems.",
+        "Fregat: corporate MDM platform for centralized master data management and integration of internal information systems.",
       e2h: "DevOps Engineer - Sber",
       e2b:
         "Supported high-load banking services, CI/CD, Linux/Windows administration, containers, monitoring and reliability for the Senat corporate system.",
