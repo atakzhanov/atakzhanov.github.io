@@ -326,28 +326,23 @@ h1 {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1.5rem;
   list-style: none;
 }
 
 .impact-list li {
   position: relative;
-  min-height: 2.2rem;
-  padding: 0.42rem 0 0.42rem 0.95rem;
-  border-top: 1px solid rgba(212, 220, 215, 0.72);
+  min-height: 3.1rem;
+  padding: 0 0 0 0.95rem;
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.48;
 }
 
-.impact-list li:first-child {
-  border-top: 0;
-}
-
 .impact-list li::before {
   position: absolute;
-  top: 0.98rem;
+  top: 0.5rem;
   left: 0;
   width: 0.3rem;
   height: 0.3rem;
@@ -434,6 +429,10 @@ h1 {
   .main-content {
     padding-right: 1.75rem;
     padding-left: 1.75rem;
+  }
+
+  .impact-list {
+    grid-template-columns: 1fr;
   }
 
 }
