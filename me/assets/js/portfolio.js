@@ -1,8 +1,8 @@
 const translations = {
   ru: {
-    title: "Такжанов Александр | Системный аналитик",
+    title: "Александр Такжанов | Системный аналитик",
     description:
-      "Такжанов Александр - системный аналитик: проект Фрегат, MDM-платформы, API-интеграции, требования, модели данных и DevOps-бэкграунд.",
+      "Александр Такжанов - системный аналитик: проект Фрегат, MDM-платформы, API-интеграции, требования, модели данных и DevOps-бэкграунд.",
     menu: {
       experience: "Опыт",
       skills: "Навыки",
@@ -11,7 +11,7 @@ const translations = {
     },
     hero: {
       kicker: "Системный анализ - MDM - Интеграции",
-      name: "Такжанов Александр",
+      name: "Александр Такжанов",
       role: "Системный аналитик",
       lead:
         "Перевожу бизнес-задачи в понятные требования, API-контракты, модели данных и задачи для разработки сложных внутренних систем.",
@@ -73,12 +73,12 @@ const translations = {
       en: "English CV",
       ru: "Русское CV",
     },
-    footer: { text: "Такжанов Александр - Системный аналитик - " },
+    footer: { text: "Александр Такжанов - Системный аналитик - " },
   },
   en: {
-    title: "Alexander Takzhanov | System Analyst",
+    title: "Aleksandr Takzhanov | System Analyst",
     description:
-      "Alexander Takzhanov - System Analyst: Fregat project, MDM platforms, API integrations, requirements engineering, data modeling and DevOps background.",
+      "Aleksandr Takzhanov - System Analyst: Fregat project, MDM platforms, API integrations, requirements engineering, data modeling and DevOps background.",
     menu: {
       experience: "Experience",
       skills: "Skills",
@@ -87,7 +87,7 @@ const translations = {
     },
     hero: {
       kicker: "System analysis - MDM - Integrations",
-      name: "Alexander Takzhanov",
+      name: "Aleksandr Takzhanov",
       role: "System Analyst",
       lead:
         "I turn business needs into precise requirements, API contracts, data models and development-ready tasks for complex internal systems.",
@@ -149,7 +149,7 @@ const translations = {
       en: "English CV",
       ru: "Russian CV",
     },
-    footer: { text: "Alexander Takzhanov - System Analyst - " },
+    footer: { text: "Aleksandr Takzhanov - System Analyst - " },
   },
 };
 

@@ -1,6 +1,6 @@
-# Alexander Takzhanov Resume Site
+# Aleksandr Takzhanov Resume Site
 
-Static GitHub Pages resume site for Alexander Takzhanov, System Analyst.
+Static GitHub Pages resume site for Aleksandr Takzhanov, System Analyst.
 
 ## Structure
 
