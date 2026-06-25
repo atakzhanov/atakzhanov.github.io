@@ -153,8 +153,8 @@ const translations = {
   },
 };
 
-const RELEASE_DEFAULT_LANG = "en";
-const DEV_DEFAULT_LANG = "en";
+const RELEASE_DEFAULT_LANG = "ru";
+const DEV_DEFAULT_LANG = "ru";
 const isDev =
   location.protocol === "file:" ||
   location.hostname === "localhost" ||
