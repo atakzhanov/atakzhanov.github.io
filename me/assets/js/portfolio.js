@@ -27,9 +27,9 @@ const translations = {
     profile: {
       title: "Профиль",
       body:
-        "Системный аналитик с 5+ годами опыта на стыке бизнес-требований, интеграций, данных и production-инфраструктуры. Специализируюсь на MDM-платформах, микросервисных системах и API-интеграциях.",
+        "Системный аналитик с 5+ годами опыта на стыке бизнес-требований, интеграций, данных и production-инфраструктуры. Специализируюсь на MDM-платформах, микросервисных системах и API-интеграциях. Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации.",
       target:
-        "Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации. Готов к релокации.",
+        "Желаемая работа: сложные высоконагруженные продукты и платформенные команды, где можно глубоко работать с системным анализом, быть ближе к архитектурным решениям и расти в сторону solution architecture. Готов к релокации.",
     },
     skills: {
       title: "Навыки",
@@ -103,9 +103,9 @@ const translations = {
     profile: {
       title: "Profile",
       body:
-        "System Analyst with 5+ years of experience across business requirements, integrations, data and production infrastructure. I specialize in MDM platforms, microservice systems and API integrations.",
+        "System Analyst with 5+ years of experience across business requirements, integrations, data and production infrastructure. I specialize in MDM platforms, microservice systems and API integrations. My strength is connecting business stakeholders, architects, developers, QA and operations from discovery and specification to acceptance and production-ready delivery.",
       target:
-        "Strong at connecting business stakeholders, architects, developers, QA and operations: from discovery and specification to acceptance and production-ready delivery. Open to relocation.",
+        "Target role: complex high-load products and platform teams where I can deepen systems analysis, work close to architecture, and grow toward solution architecture. Open to relocation.",
     },
     skills: {
       title: "Skills",
