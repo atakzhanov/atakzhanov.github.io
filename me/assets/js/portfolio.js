@@ -37,7 +37,7 @@ const translations = {
       analysisText:
         "User Story - Use Case - функциональные требования - нефункциональные требования - бизнес-правила",
       integration: "Интеграции",
-      integrationText: "REST API - gRPC - Kafka - RabbitMQ - Swagger/OpenAPI - JSON - Postman",
+      integrationText: "Airflow - REST API - gRPC - Kafka - KrakenD API Gateway - Swagger/OpenAPI - JSON - Postman",
       data: "Данные",
       dataText: "MDM - моделирование БД - логическая модель данных - SQL - PostgreSQL - Redis - OpenSearch",
       delivery: "Delivery",
@@ -52,7 +52,7 @@ const translations = {
       e1company: "АО Консалт Плюс - Фрегат",
       e1date: "09.2023 - 03.2026",
       e1b:
-        "Корпоративная MDM-платформа для централизованного управления мастер-данными и интеграции внутренних информационных систем.",
+        "Корпоративная MDM-платформа для централизованного управления нормативно-справочной информацией, мастер-данными, качеством данных и интеграциями с внутренними системами.",
       e2h: "DevOps-инженер - Сбер",
       e2b:
         "Сопровождение высоконагруженных банковских сервисов, CI/CD, администрирование Linux/Windows, контейнеризация, мониторинг и отказоустойчивость системы «Сенат».",
@@ -62,11 +62,11 @@ const translations = {
       title: "Ключевой вклад",
       i1: "Довел MDM-проект от первичного обследования до релиза, удерживая в одном контуре цели бизнеса, ограничения архитектуры и delivery-план.",
       i2: "Сформировал as-is/to-be модель бизнес-процессов и целевое поведение системы, что позволило команде перейти от разрозненных ожиданий к согласованному плану реализации.",
-      i3: "Скоординировал работу дизайнеров, тестировщиков и разработчиков, синхронизировав UX-сценарии, спецификации, тест-кейсы и реализацию.",
-      i4: "Сформировал аналитическую базу продукта: бизнес-правила, функциональные требования, API-контракты, модель БД, валидации и сценарии ошибок.",
-      i5: "Проработал архитектуру взаимодействия микросервисов и корпоративных систем через REST/gRPC/Kafka, включая контракты и форматы обмена данными.",
-      i6: "Снизил риски перед разработкой и релизом за счет регулярного согласования решений с заказчиком, архитекторами и delivery-командой.",
-      i7: "Ускорил приемку функциональности: проводил демо, разбирал дефекты, уточнял требования после тестирования и доводил спорные сценарии до согласованного решения.",
+      i3: "Проработал интеграционный контур с внешними системами на базе Airflow: реляционные БД, Kafka-очереди и REST API, включая сценарии загрузки, обмена, валидации и обработки ошибок.",
+      i4: "Участвовал в формировании микросервисной архитектуры MDM-системы: более 5 сервисов, асинхронное взаимодействие через Kafka и понятные границы ответственности сервисов.",
+      i5: "Проработал API Gateway на базе KrakenD: маршрутизацию запросов, контракты взаимодействия и единый входной слой для внутренних сервисов.",
+      i6: "Сформировал аналитическую базу продукта: бизнес-правила, функциональные требования, API-контракты, модель БД, валидации и сценарии ошибок.",
+      i7: "Скоординировал дизайнеров, тестировщиков и разработчиков, синхронизировав UX-сценарии, спецификации, тест-кейсы, демо и приемку перед релизом.",
     },
     resume: {
       title: "Резюме",
@@ -113,7 +113,7 @@ const translations = {
       analysisText:
         "User Story - Use Case - Functional requirements - Non-functional requirements - Business rules",
       integration: "Integrations",
-      integrationText: "REST API - gRPC - Kafka - RabbitMQ - Swagger/OpenAPI - JSON - Postman",
+      integrationText: "Airflow - REST API - gRPC - Kafka - KrakenD API Gateway - Swagger/OpenAPI - JSON - Postman",
       data: "Data",
       dataText: "MDM - Database modeling - Logical data modeling - SQL - PostgreSQL - Redis - OpenSearch",
       delivery: "Delivery",
@@ -128,7 +128,7 @@ const translations = {
       e1company: "AO Consult Plus - Fregat",
       e1date: "Sep 2023 - Mar 2026",
       e1b:
-        "Corporate MDM platform for centralized master data management and integration of internal information systems.",
+        "Corporate MDM platform for centralized reference and master data management, data quality and integrations with internal systems.",
       e2h: "DevOps Engineer - Sber",
       e2b:
         "Supported high-load banking services, CI/CD, Linux/Windows administration, containers, monitoring and reliability for the Senat corporate system.",
@@ -138,11 +138,11 @@ const translations = {
       title: "Selected impact",
       i1: "Led the MDM project from initial discovery to production release, keeping business goals, architecture constraints and delivery plan aligned.",
       i2: "Defined the as-is/to-be process model and target system behavior, helping the team move from fragmented expectations to an agreed implementation plan.",
-      i3: "Coordinated designers, QA engineers and developers, synchronizing UX flows, specifications, test cases and implementation.",
-      i4: "Built the product analysis base: business rules, functional requirements, API contracts, database model, validation logic and error scenarios.",
-      i5: "Worked through the interaction architecture of microservices and corporate systems via REST/gRPC/Kafka, including contracts and data exchange formats.",
-      i6: "Reduced delivery and release risks through regular decision alignment with stakeholders, architects and the delivery team.",
-      i7: "Accelerated feature acceptance through demos, defect analysis, post-testing requirement clarification and resolution of edge-case scenarios.",
+      i3: "Worked through the external-integration layer built on Airflow: relational databases, Kafka queues and REST APIs, including loading, exchange, validation and error-handling scenarios.",
+      i4: "Contributed to the microservice architecture of the MDM system: 5+ services, asynchronous Kafka-based interaction and clear service boundaries.",
+      i5: "Worked through the API Gateway layer based on KrakenD: request routing, interaction contracts and a unified entry point for internal services.",
+      i6: "Built the product analysis base: business rules, functional requirements, API contracts, database model, validation logic and error scenarios.",
+      i7: "Coordinated designers, QA engineers and developers, synchronizing UX flows, specifications, test cases, demos and acceptance before release.",
     },
     resume: {
       title: "Resume",
