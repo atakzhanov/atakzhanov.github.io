@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alexander Takzhanov - System Analyst</title>
+    <style>
+      :root {
+        --ink: #202622;
+        --muted: #5d6762;
+        --line: #d8dfdb;
+        --brand: #176b54;
+        --accent: #b9573e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #e9eeeb;
+        color: var(--ink);
+        font: 13.5px/1.5 Arial, sans-serif;
+      }
+
+      main {
+        width: min(860px, 100%);
+        margin: 0 auto;
+        padding: 34px 42px;
+        background: #fff;
+        min-height: 100vh;
+      }
+
+      header {
+        border-bottom: 2px solid var(--brand);
+        padding-bottom: 14px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.1;
+      }
+
+      .role {
+        margin: 5px 0 8px;
+        color: var(--brand);
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        color: var(--muted);
+        font-size: 12.5px;
+      }
+
+      a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+
+      section {
+        margin-top: 16px;
+      }
+
+      h2 {
+        margin: 0 0 7px;
+        color: var(--accent);
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 8px;
+      }
+
+      .date {
+        flex: 0 0 auto;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .company {
+        margin: 2px 0 5px;
+        color: var(--brand);
+        font-weight: 700;
+      }
+
+      .project {
+        margin: 0 0 7px;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      ul {
+        margin: 6px 0 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin: 3px 0;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 135px 1fr;
+        gap: 6px 14px;
+      }
+
+      .skills b {
+        color: var(--brand);
+      }
+
+      .note {
+        border-left: 3px solid var(--brand);
+        padding-left: 10px;
+        color: var(--muted);
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        main {
+          width: auto;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Alexander Takzhanov</h1>
+        <p class="role">System Analyst</p>
+        <div class="contacts">
+          <span>Serbia</span>
+          <span>Full-time: remote, hybrid, on-site</span>
+          <a href="tel:+79604666657">+7 960 466-66-57</a>
+          <a href="mailto:mr.takzhanov@gmail.com">mr.takzhanov@gmail.com</a>
+          <a href="https://t.me/moodsouth">telegram: @moodsouth</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p class="note">
+          System Analyst with 5+ years of experience across business
+          requirements, integrations, data and production infrastructure. I
+          specialize in MDM platforms, microservice systems and API
+          integrations: turning business needs into clear specifications, API
+          contracts, data models and development-ready tasks.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Skills</h2>
+        <div class="skills">
+          <b>Analysis</b><span>Requirements discovery, functional/non-functional requirements, User Story, Use Case, business rules, error scenarios</span>
+          <b>Integrations</b><span>REST API, gRPC, Kafka, RabbitMQ, Swagger/OpenAPI, JSON, Postman</span>
+          <b>Data</b><span>MDM, logical data modeling, entities, attributes, relationships, SQL, PostgreSQL, Redis, OpenSearch</span>
+          <b>Delivery</b><span>Jira, Confluence, Draw.io, Agile/Scrum, developer tasks, demos, acceptance, QA support</span>
+          <b>DevOps</b><span>Linux, Docker, Kubernetes/OpenShift, GitLab CI/CD, Jenkins, Ansible, Nginx, Prometheus, Grafana, ELK</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="job-head">
+          <div>
+            <h3>System Analyst</h3>
+            <p class="company">AO Consult Plus</p>
+          </div>
+          <span class="date">Sep 2023 - Mar 2026</span>
+        </div>
+        <p class="project">Enterprise MDM platform for centralized master data management and integration of internal information systems.</p>
+        <ul>
+          <li>Collected and formalized stakeholder requirements, translating business expectations into testable functional and non-functional requirements.</li>
+          <li>Decomposed requirements into development-ready tasks; described business processes, use cases and data processing rules.</li>
+          <li>Designed integrations between internal services and prepared specifications for REST API, gRPC and Kafka interactions.</li>
+          <li>Prepared API contracts, exchange formats, request/response structures, validation logic and error handling scenarios.</li>
+          <li>Designed logical MDM data models: entities, attributes, relationships, reference data and master data processing rules.</li>
+          <li>Created UML Sequence Diagrams and service interaction diagrams in Draw.io for alignment with customers, architects and engineers.</li>
+          <li>Supported developers and QA, analyzed defects, refined requirements after testing, and participated in demos and acceptance.</li>
+        </ul>
+
+        <div class="job-head">
+          <div>
+            <h3>DevOps Engineer</h3>
+            <p class="company">Sber</p>
+          </div>
+          <span class="date">Sep 2019 - Sep 2022</span>
+        </div>
+        <p class="project">Enterprise system "Senat" used by bank executives for management decision support. Project team: 30+ people.</p>
+        <ul>
+          <li>Deployed and supported high-load services in a banking environment; administered Linux and Windows servers.</li>
+          <li>Configured CI/CD and automated application delivery with containerization and orchestration tooling.</li>
+          <li>Maintained monitoring, service resilience and operational readiness.</li>
+          <li>Supported development teams with infrastructure topics, building a practical understanding of the full requirement-to-production lifecycle.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>Don State Technical University, Rostov-on-Don. Bachelor's degree, Automation, Mechatronics and Control, 2021.</p>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <p>Russian - native.</p>
+      </section>
+    </main>
+  </body>
+</html>
