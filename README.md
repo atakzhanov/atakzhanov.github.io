@@ -8,8 +8,10 @@ Static GitHub Pages resume site for Aleksandr Takzhanov, System Analyst.
 - `me/index.html` - public resume landing page with RU/EN language switch.
 - `me/assets/css/portfolio.css` - visual design.
 - `me/assets/js/portfolio.js` - RU/EN copy and language switching.
-- `me/cv/alexander-takzhanov-cv-ru.html` - printable Russian CV.
-- `me/cv/alexander-takzhanov-cv-en.html` - printable English CV.
+- `me/cv/aleksandr-takzhanov-cv-ru.pdf` - Russian CV PDF.
+- `me/cv/aleksandr-takzhanov-cv-en.pdf` - English CV PDF.
+- `me/cv/alexander-takzhanov-cv-ru.html` - compatibility redirect to the Russian PDF.
+- `me/cv/alexander-takzhanov-cv-en.html` - compatibility redirect to the English PDF.
 - `cv/` - LaTeX CV sources kept for future PDF generation.
 
 ## Local Preview
