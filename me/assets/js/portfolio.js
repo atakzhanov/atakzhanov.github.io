@@ -27,7 +27,7 @@ const translations = {
     profile: {
       title: "Профиль",
       body:
-        "Системный аналитик с 5+ годами опыта на стыке бизнес-требований, интеграций, данных и production-инфраструктуры. Специализируюсь на MDM-платформах, микросервисных системах и API-интеграциях. Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации.",
+        "Системный аналитик с 6+ годами опыта на стыке бизнес-требований, интеграций, данных и production-инфраструктуры. Специализируюсь на MDM-платформах, микросервисных системах и API-интеграциях. Сильная сторона - связывать заказчика, архитекторов, разработку, QA и эксплуатацию: от сбора требований и спецификаций до приемки и готовности к промышленной эксплуатации.",
       target:
         "Желаемая работа: сложные высоконагруженные продукты и платформенные команды, где можно глубоко работать с системным анализом, быть ближе к архитектурным решениям и расти в сторону solution architecture. Готов к релокации.",
     },
@@ -103,7 +103,7 @@ const translations = {
     profile: {
       title: "Profile",
       body:
-        "System Analyst with 5+ years of experience across business requirements, integrations, data and production infrastructure. I specialize in MDM platforms, microservice systems and API integrations. My strength is connecting business stakeholders, architects, developers, QA and operations from discovery and specification to acceptance and production-ready delivery.",
+        "System Analyst with 6+ years of experience across business requirements, integrations, data and production infrastructure. I specialize in MDM platforms, microservice systems and API integrations. My strength is connecting business stakeholders, architects, developers, QA and operations from discovery and specification to acceptance and production-ready delivery.",
       target:
         "Target role: complex high-load products and platform teams where I can deepen systems analysis, work close to architecture, and grow toward solution architecture. Open to relocation.",
     },
