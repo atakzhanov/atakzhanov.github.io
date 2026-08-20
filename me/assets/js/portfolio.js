@@ -50,7 +50,7 @@ const translations = {
       title: "Опыт",
       e1h: "Системный аналитик",
       e1company: "АО Консалт Плюс - Фрегат",
-      e1date: "09.2023 - 03.2026",
+      e1date: "05.2023 - 04.2026",
       e1b:
         "Корпоративная MDM-платформа для централизованного управления нормативно-справочной информацией, мастер-данными, качеством данных и интеграциями с внутренними системами.",
       e2h: "DevOps-инженер - Сбер",
@@ -126,7 +126,7 @@ const translations = {
       title: "Experience",
       e1h: "System Analyst",
       e1company: "AO Consult Plus - Fregat",
-      e1date: "Sep 2023 - Mar 2026",
+      e1date: "May 2023 - Apr 2026",
       e1b:
         "Corporate MDM platform for centralized reference and master data management, data quality and integrations with internal systems.",
       e2h: "DevOps Engineer - Sber",
