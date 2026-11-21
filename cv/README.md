@@ -1,33 +1,33 @@
 # CV sources
 
-This folder stores CV sources and one shared layout template.
+One-page A4 CV in Russian and English, written as HTML and printed to PDF
+with headless Chrome.
 
 ## Structure
 
-- `template.tex` - shared layout/preamble for all CV versions.
-- `content/en.tex` - English CV content (sections/body).
-- `content/ru.tex` - Russian CV content (sections/body).
-- `cv-en.tex` - EN wrapper (language + profile variables + content file).
-- `cv-ru.tex` - RU wrapper (language + profile variables + content file).
+- `html/style.css` - shared layout and typography for both versions.
+- `html/ru.html` - Russian CV content.
+- `html/en.html` - English CV content.
 
 ## Build
 
-Run from repository root:
+Run from the repository root (needs Google Chrome and, for the intended look,
+the Inter font):
 
 ```bash
 make cv
 ```
 
-Output PDFs are generated for GitHub Pages in:
+Output PDFs for GitHub Pages:
 
-- `me/cv/aleksandr-takzhanov-cv-en.pdf`
 - `me/cv/aleksandr-takzhanov-cv-ru.pdf`
+- `me/cv/aleksandr-takzhanov-cv-en.pdf`
 
-Temporary build files are kept in `cv/.build/`.
+Use `make cv CHROME=chromium` if Chrome is installed under another name.
 
 ## Editing workflow
 
-1. Change layout/typography in `template.tex`.
-2. Change language-specific text in `content/en.tex` or `content/ru.tex`.
-3. Change profile/contact variables in `cv-en.tex` or `cv-ru.tex`.
-4. Rebuild with `make cv`.
+1. Change layout or typography in `html/style.css`.
+2. Change text in `html/ru.html` or `html/en.html`; keep both versions in sync.
+3. Open the HTML file in a browser to preview, then rebuild with `make cv`.
+4. Check that each PDF is still one page.

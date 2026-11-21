@@ -1,6 +1,6 @@
 # Aleksandr Takzhanov Resume Site
 
-Static GitHub Pages resume site for Aleksandr Takzhanov, System Analyst.
+Static GitHub Pages resume site for Aleksandr Takzhanov, Project Manager.
 
 ## Structure
 
@@ -12,7 +12,7 @@ Static GitHub Pages resume site for Aleksandr Takzhanov, System Analyst.
 - `me/cv/aleksandr-takzhanov-cv-en.pdf` - English CV PDF.
 - `me/cv/alexander-takzhanov-cv-ru.html` - compatibility redirect to the Russian PDF.
 - `me/cv/alexander-takzhanov-cv-en.html` - compatibility redirect to the English PDF.
-- `cv/` - LaTeX CV sources kept for future PDF generation.
+- `cv/html/` - HTML sources of the RU/EN CV; `make cv` prints them to the PDFs above.
 
 ## Local Preview
 
