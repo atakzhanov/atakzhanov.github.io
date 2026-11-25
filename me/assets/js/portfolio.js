@@ -5,6 +5,7 @@ const translations = {
       "Александр Такжанов - Project Manager и руководитель группы разработки с DevOps-бэкграундом: поставка по Scrum, планирование, риски, согласование со стейкхолдерами.",
     menu: {
       experience: "Опыт",
+      projects: "Проекты",
       skills: "Навыки",
       education: "Образование",
       resume: "Резюме",
@@ -34,6 +35,9 @@ const translations = {
     },
     experience: {
       title: "Опыт",
+      e0h: "Project Manager (стажировка) - Next Genium",
+      e0b: "Геймдев-студия, игры для ПК и консолей. Частичная занятость; детали проекта под NDA.",
+      e0date: "11.2026 - н.в.",
       e1h: "Руководитель группы разработки",
       e1company: "АО «Консалт Плюс»",
       e1date: "04.2024 - 03.2026",
@@ -59,6 +63,39 @@ const translations = {
       i3: "Договаривался с бизнесом о реалистичном объёме на квартал на основе фактической velocity команды, в том числе перевёл крупную ML-функциональность в формат пилота.",
       i4: "Участвовал в согласовании требований с заказчиком, проводил демонстрации готового функционала.",
       i5: "Руководил разработкой интеграций с внешними системами: адаптер на Apache Airflow, REST API, Kafka, прямые подключения к БД.",
+    },
+    projects: {
+      title: "Проекты",
+      intro:
+        "Собственные продукты, которые я веду от идеи до работающей версии: формулирую требования, принимаю решения по архитектуре и приоритетам, а разработку веду с AI-агентами.",
+      labels: { role: "Моя роль", result: "Результат", ai: "AI-процесс" },
+      studentshell: {
+        meta: "MVP · Rust, Tauri, Vue, SQLite · 2026",
+        desc:
+          "Десктоп-система для учеников: время на игры зарабатывается решением учебных задач, а куратор (родитель или репетитор) управляет правилами и курсами.",
+        role:
+          "Сформулировал концепцию и требования. Начал с технического спайка на главный риск — отслеживание и блокировку процессов в Windows, затем вёл разработку короткими срезами по бэклогу. Пересматривал решения при изменении условий: например, заменил PostgreSQL на встроенную SQLite для локального сценария.",
+        result:
+          "Работающий MVP: экономика баланса, курсы задач с теорией, адаптация уровня ученика, отчёты, публичная библиотека курсов с модерацией и рейтингом, веб-сервис для кураторов с синхронизацией.",
+        ai: "Разработка с AI-агентами Claude. Спецификация, архитектура, руководство пользователя и инструкция по развёртыванию ведутся в репозитории.",
+      },
+      mangaka: {
+        meta: "В разработке · Rust, Tauri, Leptos · 2026",
+        desc:
+          "Десктоп-приложение — производственный конвейер для превращения собственного комикса в аниме-эпизоды с помощью AI-сервисов.",
+        role:
+          "Сравнил готовые AI-платформы с собственной разработкой и выбрал свой инструмент, так как производство будет регулярным. Спроектировал архитектуру и определил первый срез — базу персонажей.",
+        result: "Ранняя стадия: архитектура, дорожная карта и первый срез в работе.",
+        ai: "Разработка с AI-агентами Claude. Видение, дорожная карта, архитектура и журнал изменений ведутся в репозитории.",
+      },
+      site: {
+        meta: "Claude Code · GitHub Pages · GitHub Actions",
+        desc: "Этот сайт и резюме в PDF на русском и английском.",
+        role:
+          "Перевёл исходники резюме с LaTeX на HTML со сборкой PDF через headless Chrome, обновил сайт и настроил сборку в CI.",
+        result: "Одна точка правды для резюме: правка в HTML — новые PDF и сайт.",
+        ai: "Всё сделано через Claude Code: от правок контента до коммитов и публикации.",
+      },
     },
     skills: {
       title: "Навыки",
@@ -95,6 +132,7 @@ const translations = {
       "Aleksandr Takzhanov - Project Manager and development team lead with a DevOps background: Scrum delivery, planning, risks and stakeholder alignment.",
     menu: {
       experience: "Experience",
+      projects: "Projects",
       skills: "Skills",
       education: "Education",
       resume: "Resume",
@@ -124,6 +162,9 @@ const translations = {
     },
     experience: {
       title: "Experience",
+      e0h: "Project Manager (internship) - Next Genium",
+      e0b: "Game development studio making titles for PC and consoles. Part-time; project details under NDA.",
+      e0date: "Nov 2026 - present",
       e1h: "Development Team Lead",
       e1company: "Consult Plus JSC",
       e1date: "Apr 2024 - Mar 2026",
@@ -149,6 +190,39 @@ const translations = {
       i3: "Negotiated realistic quarterly scope with the business using the team's actual velocity, including moving a large ML feature into a pilot.",
       i4: "Took part in agreeing requirements with the client and ran demos of delivered features.",
       i5: "Led development of integrations with external systems: Apache Airflow adapter, REST API, Kafka, direct database connections.",
+    },
+    projects: {
+      title: "Projects",
+      intro:
+        "My own products, which I take from idea to a working version: I define requirements, make architecture and priority decisions, and run development with AI agents.",
+      labels: { role: "My role", result: "Result", ai: "AI workflow" },
+      studentshell: {
+        meta: "MVP · Rust, Tauri, Vue, SQLite · 2026",
+        desc:
+          "A desktop system for students: game time is earned by solving study tasks, while a curator (parent or tutor) manages the rules and courses.",
+        role:
+          "Defined the concept and requirements. Started with a technical spike on the main risk — tracking and blocking processes on Windows — then ran development in short slices from a backlog. Revisited decisions as conditions changed, e.g. replaced PostgreSQL with embedded SQLite for the local scenario.",
+        result:
+          "Working MVP: balance economy, task courses with theory, adaptive student level, reports, a public course library with moderation and ratings, a web service for curators with sync.",
+        ai: "Built with Claude AI agents. Spec, architecture, user guide and deployment guide are kept in the repository.",
+      },
+      mangaka: {
+        meta: "In progress · Rust, Tauri, Leptos · 2026",
+        desc:
+          "A desktop app — a production pipeline for turning my own comic into anime-style episodes with AI services.",
+        role:
+          "Compared ready-made AI platforms with building my own tool and chose to build, since production will be recurring. Designed the architecture and defined the first slice — the character database.",
+        result: "Early stage: architecture and roadmap done, first slice in progress.",
+        ai: "Built with Claude AI agents. Vision, roadmap, architecture and changelog are kept in the repository.",
+      },
+      site: {
+        meta: "Claude Code · GitHub Pages · GitHub Actions",
+        desc: "This site and the PDF resumes in Russian and English.",
+        role:
+          "Moved the resume sources from LaTeX to HTML with PDF builds via headless Chrome, updated the site and set up the CI build.",
+        result: "One source of truth for the resume: edit the HTML and get new PDFs and site.",
+        ai: "Done end to end with Claude Code, from content edits to commits and publishing.",
+      },
     },
     skills: {
       title: "Skills",

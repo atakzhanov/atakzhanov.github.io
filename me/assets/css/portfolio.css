@@ -380,6 +380,79 @@ h1 {
   line-height: 1.45;
 }
 
+/* Projects */
+.project-list {
+  border-top: 1px solid var(--line);
+}
+
+.project-card {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.project-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.project-meta {
+  margin: 0;
+  color: var(--muted);
+  font: 500 0.66rem "JetBrains Mono", monospace;
+  white-space: nowrap;
+}
+
+.project-desc {
+  margin: 0.4rem 0 0.6rem;
+  color: var(--ink);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: 7.75rem minmax(0, 1fr);
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.project-facts dt {
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.project-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.project-shots:empty {
+  display: none;
+}
+
+.project-shots img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
 .skill-list {
   border-top: 1px solid var(--line);
 }
@@ -507,8 +580,14 @@ h1 {
     gap: 0.35rem;
   }
 
+  .project-facts,
   .skill-row {
     grid-template-columns: 1fr;
     gap: 0.2rem;
   }
+}
+
+.current-extra {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
 }
