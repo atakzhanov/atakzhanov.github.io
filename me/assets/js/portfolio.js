@@ -14,7 +14,7 @@ const translations = {
     hero: {
       kicker: "Управление проектами - Delivery - Разработка",
       name: "Александр Такжанов",
-      role: "Project Manager - Team Lead",
+      role: "Project Manager",
       lead:
         "Веду команды разработки от старта проекта до поставки: планирование, приоритеты, риски и договорённости с бизнесом, с опорой на сильный технический бэкграунд.",
       location: "Сербия",
@@ -29,9 +29,9 @@ const translations = {
     profile: {
       title: "Профиль",
       body:
-        "Руководитель группы разработки с техническим бэкграундом в DevOps. Два года вёл команду из 12–18 человек и довёл корпоративную платформу от старта разработки до приёмки заказчиком в согласованный срок.",
+        "Project Manager с опытом руководства разработкой: два года вёл команду из 12–18 человек и довёл корпоративную платформу от старта до приёмки заказчиком в согласованный срок. Сейчас — Project Manager в геймдев-студии на частичной занятости.",
       target:
-        "Желаемая роль: Project Manager или Delivery Manager в команде разработки, где я отвечаю за планирование, предсказуемость поставки и согласование со стейкхолдерами.",
+        "Хочу руководить проектами, а не группой разработки: отвечать за проект целиком — сроки, объём, риски и согласование со стейкхолдерами. Роль: Project Manager или Delivery Manager.",
     },
     experience: {
       title: "Опыт",
@@ -115,7 +115,7 @@ const translations = {
     hero: {
       kicker: "Project management - Delivery - Engineering",
       name: "Aleksandr Takzhanov",
-      role: "Project Manager - Team Lead",
+      role: "Project Manager",
       lead:
         "I lead development teams from the start of a project to delivery: planning, priorities, risks and agreements with the business, backed by a strong engineering background.",
       location: "Serbia",
@@ -130,9 +130,9 @@ const translations = {
     profile: {
       title: "Profile",
       body:
-        "Development team lead with a DevOps background. For two years I led a team of 12–18 people and took a corporate platform from the start of development to client acceptance on the agreed schedule.",
+        "Project Manager with a background in leading development: for two years I led a team of 12–18 people and took a corporate platform from the start to client acceptance on the agreed schedule. Currently a part-time Project Manager at a game studio.",
       target:
-        "Target role: Project Manager or Delivery Manager in a development team, where I can own planning, delivery predictability and stakeholder alignment.",
+        "I want to lead projects rather than a development team: own the whole project — timeline, scope, risks and stakeholder alignment. Role: Project Manager or Delivery Manager.",
     },
     experience: {
       title: "Experience",
