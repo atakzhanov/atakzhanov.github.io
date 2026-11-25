@@ -200,12 +200,28 @@ a { color: var(--link); }
 }
 
 .pp-gallery figure { margin: 0; }
-.pp-gallery img {
+.pp-thumb {
+  display: block;
   width: 100%;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
-  display: block;
+  background: var(--page);
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+.pp-thumb:hover,
+.pp-thumb:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(32, 38, 34, 0.14); }
+.pp-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: top;
+}
+.pp-gallery figure.wide { grid-column: span 2; }
+.pp-gallery figure.wide .pp-thumb img { aspect-ratio: 16 / 10; }
 .pp-gallery figcaption { margin-top: 0.3rem; color: var(--muted); font-size: 0.72rem; }
 .pp-gallery-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 0.75rem; }
 
@@ -221,4 +237,70 @@ a { color: var(--link); }
 @media (max-width: 700px) {
   .pp-shell { padding: 1.3rem 1rem 2rem; }
   .pp-body { grid-template-columns: 1fr; }
+}
+
+/* Lightbox */
+body.lb-open { overflow: hidden; }
+
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(16, 20, 18, 0.88);
+}
+.lb[hidden] { display: none; }
+
+.lb-figure {
+  margin: 0;
+  max-width: min(92vw, 1400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lb-img {
+  max-width: 100%;
+  max-height: calc(100vh - 6rem);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lb-figure figcaption {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  color: #e6ece9;
+  font-size: 0.85rem;
+}
+.lb-counter { color: #9fb0a8; font-family: "JetBrains Mono", monospace; }
+
+.lb-btn {
+  flex: 0 0 auto;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.lb-btn:hover { background: rgba(255, 255, 255, 0.24); }
+.lb-close { position: absolute; top: 1rem; right: 1rem; font-size: 1.1rem; }
+.lb-single .lb-prev,
+.lb-single .lb-next { visibility: hidden; }
+
+@media (max-width: 700px) {
+  .lb { padding: 0.5rem; gap: 0.3rem; }
+  .lb-prev, .lb-next { position: absolute; bottom: 1rem; }
+  .lb-prev { left: 1rem; }
+  .lb-next { right: 1rem; }
+  .lb-img { max-height: calc(100vh - 8rem); }
 }

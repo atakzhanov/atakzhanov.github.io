@@ -34,14 +34,24 @@ function renderIcon(project) {
 
 function renderGallery(project, dict) {
   if (!project.shots.length) return null;
-  const figures = project.shots.map(([file, caption]) =>
-    el("figure", {}, [
-      el("a", { href: IMG + file, target: "_blank", rel: "noopener" }, [
-        el("img", { src: IMG + file, alt: `${project.name}: ${caption}`, loading: "lazy" }),
-      ]),
-      el("figcaption", { text: caption }),
-    ])
-  );
+  const items = project.shots.map(([file, caption]) => ({
+    src: IMG + file,
+    alt: `${project.name}: ${caption}`,
+    caption: `${project.name} — ${caption}`,
+  }));
+  const figures = project.shots.map(([file, caption], i) => {
+    const thumb = el("button", { type: "button", class: "pp-thumb", "aria-label": items[i].alt }, [
+      el("img", { src: IMG + file, alt: "", loading: "lazy" }),
+    ]);
+    thumb.addEventListener("click", () => Lightbox.open(items, i));
+    const figure = el("figure", {}, [thumb, el("figcaption", { text: caption })]);
+    // Landscape screenshots (desktop apps) get a wider tile than phone screens.
+    thumb.querySelector("img").addEventListener("load", (event) => {
+      const img = event.target;
+      if (img.naturalWidth > img.naturalHeight) figure.classList.add("wide");
+    });
+    return figure;
+  });
   return el("div", { class: "pp-gallery" }, [
     el("p", { class: "pp-gallery-note", text: dict.labels.shotsNote }),
     ...figures,
