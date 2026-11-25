@@ -44,12 +44,8 @@ function renderGallery(project, dict) {
       el("img", { src: IMG + file, alt: "", loading: "lazy" }),
     ]);
     thumb.addEventListener("click", () => Lightbox.open(items, i));
-    const figure = el("figure", {}, [thumb, el("figcaption", { text: caption })]);
-    // Landscape screenshots (desktop apps) get a wider tile than phone screens.
-    thumb.querySelector("img").addEventListener("load", (event) => {
-      const img = event.target;
-      if (img.naturalWidth > img.naturalHeight) figure.classList.add("wide");
-    });
+    // Desktop screenshots get wider landscape tiles than phone screens.
+    const figure = el("figure", { class: project.shotsWide ? "wide" : "" }, [thumb, el("figcaption", { text: caption })]);
     return figure;
   });
   return el("div", { class: "pp-gallery" }, [

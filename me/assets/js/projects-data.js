@@ -23,7 +23,7 @@ const PROJECTS_I18N = {
         ["Документация — часть продукта", "Руководство пользователя, архитектура и журнал изменений обновляются вместе с кодом."],
       ],
     },
-    labels: { built: "Что сделано", decisions: "Решения и подход", shotsNote: "Дизайн-макеты экранов" },
+    labels: { built: "Что сделано", decisions: "Решения и подход", shotsNote: "Экраны" },
     footer: { text: "Подробнее о любом проекте расскажу на собеседовании." },
     projects: [
       {
@@ -64,10 +64,10 @@ const PROJECTS_I18N = {
           "После исследования рынка развернул продукт от заглушек к функциональности: фокус на практиках и сериях.",
         ],
         shots: [
-          ["rpg-main.webp", "Главная"],
-          ["rpg-character.webp", "Персонаж"],
-          ["rpg-skill.webp", "Навык и испытание ранга"],
-          ["rpg-roadmap.webp", "Программа развития"],
+          ["rpg-main.webp", "Главная (дизайн-макет)"],
+          ["rpg-character.webp", "Персонаж (дизайн-макет)"],
+          ["rpg-skill.webp", "Навык и испытание ранга (дизайн-макет)"],
+          ["rpg-roadmap.webp", "Программа развития (дизайн-макет)"],
         ],
       },
       {
@@ -87,7 +87,13 @@ const PROJECTS_I18N = {
           "Дорожная карта по этапам производства: вселенная → сценарий → комикс → анимация.",
           "По итогам живого прогона ввёл библиотеку ассетов, чтобы кадры выглядели последовательно.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["mangaka-video.webp", "Видео: шоты главы, сгенерированные по сценарию"],
+          ["mangaka-comic.webp", "Комикс: сцены главы с персонажами и репликами"],
+          ["mangaka-style.webp", "Стиль проекта"],
+          ["mangaka-producer.webp", "Проекты продюсера и прогресс по плану"],
+        ],
       },
       {
         id: "market-control",
@@ -125,7 +131,14 @@ const PROJECTS_I18N = {
           "Все прогнозы записываются и сверяются с фактом — честная оценка вместо красивых кривых.",
           "Лимиты риска у ботов: доля капитала, стоп-лосс, дневной лимит, остановка после серии ошибок.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["grail-analysis.webp", "Анализ: график, индикаторы, техническая картина"],
+          ["grail-backtest.webp", "Бэктест стратегии против «купи и держи»"],
+          ["grail-ai.webp", "Лаборатория ML-моделей"],
+          ["grail-bots.webp", "Портфели и боты для проверки вперёд"],
+          ["grail-paper.webp", "Виртуальный счёт"],
+        ],
       },
     ],
   },
@@ -150,7 +163,7 @@ const PROJECTS_I18N = {
         ["Docs are part of the product", "User guide, architecture and changelog are updated together with the code."],
       ],
     },
-    labels: { built: "What's built", decisions: "Decisions and approach", shotsNote: "Screen design mockups" },
+    labels: { built: "What's built", decisions: "Decisions and approach", shotsNote: "Screens" },
     footer: { text: "Happy to walk through any of these in an interview." },
     projects: [
       {
@@ -191,10 +204,10 @@ const PROJECTS_I18N = {
           "After market research, pivoted from placeholders to real features with a focus on practices and streaks.",
         ],
         shots: [
-          ["rpg-main.webp", "Home"],
-          ["rpg-character.webp", "Character"],
-          ["rpg-skill.webp", "Skill and rank trial"],
-          ["rpg-roadmap.webp", "Learning program"],
+          ["rpg-main.webp", "Home (design mockup)"],
+          ["rpg-character.webp", "Character (design mockup)"],
+          ["rpg-skill.webp", "Skill and rank trial (design mockup)"],
+          ["rpg-roadmap.webp", "Learning program (design mockup)"],
         ],
       },
       {
@@ -214,7 +227,13 @@ const PROJECTS_I18N = {
           "Roadmap by production stage: world → script → comic → animation.",
           "After a live run, introduced an asset library so frames stay consistent.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["mangaka-video.webp", "Video: chapter shots generated from the script"],
+          ["mangaka-comic.webp", "Comic: chapter scenes with characters and lines"],
+          ["mangaka-style.webp", "Project style"],
+          ["mangaka-producer.webp", "Producer projects and plan progress"],
+        ],
       },
       {
         id: "market-control",
@@ -252,7 +271,14 @@ const PROJECTS_I18N = {
           "Every forecast is logged and checked against reality — honest evaluation instead of pretty curves.",
           "Bot risk limits: capital share, stop-loss, daily loss limit, stop after a run of errors.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["grail-analysis.webp", "Analysis: chart, indicators, technical summary"],
+          ["grail-backtest.webp", "Strategy backtest vs buy and hold"],
+          ["grail-ai.webp", "ML model lab"],
+          ["grail-bots.webp", "Portfolios and bots for forward testing"],
+          ["grail-paper.webp", "Virtual account"],
+        ],
       },
     ],
   },
