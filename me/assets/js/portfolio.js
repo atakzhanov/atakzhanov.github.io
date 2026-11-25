@@ -16,9 +16,9 @@ const translations = {
       name: "Александр Такжанов",
       role: "Project Manager",
       lead:
-        "Веду команды разработки от старта проекта до поставки: планирование, приоритеты, риски и договорённости с бизнесом, с опорой на сильный технический бэкграунд.",
+        "Веду проекты от старта до поставки: планирование, приоритеты, риски и договорённости с бизнесом, с опорой на сильный технический бэкграунд.",
       location: "Сербия",
-      availability: "Удалённо или с релокацией; любой формат занятости",
+      availability: "Удалённо или релокация; любой формат занятости",
     },
     metrics: {
       experience: "лет в IT",
@@ -29,14 +29,14 @@ const translations = {
     profile: {
       title: "Профиль",
       body:
-        "Project Manager с опытом руководства разработкой: два года вёл команду из 12–18 человек и довёл корпоративную платформу от старта до приёмки заказчиком в согласованный срок. Сейчас — Project Manager в геймдев-студии на частичной занятости.",
+        "Руководитель проектов с опытом в разработке корпоративных систем. Два года отвечал за поставку MDM-платформы: вёл кросс-функциональную команду из 12–18 человек, выстроил процесс поставки — двухнедельные спринты с регулярными релизами, CI/CD, планирование по фактической скорости команды — и довёл проект до приёмки заказчиком в согласованный срок. Сейчас веду проект в геймдев-студии (частичная занятость).",
       target:
-        "Хочу руководить проектами, а не группой разработки: отвечать за проект целиком — сроки, объём, риски и согласование со стейкхолдерами. Роль: Project Manager или Delivery Manager.",
+        "Специализация — управление проектом целиком и оптимизация процессов: сроки, объём, риски, взаимодействие со стейкхолдерами. Роль: Project Manager или Delivery Manager.",
     },
     experience: {
       title: "Опыт",
       e0h: "Project Manager - Next Genium",
-      e0b: "Геймдев-студия, разработка игр для ПК и консолей. Детали проекта под NDA.",
+      e0b: "Геймдев-студия, игры для ПК и консолей (детали под NDA). Веду бэклог и планирование спринтов, координирую направления (арт, разработка, геймдизайн), готовлю отчётность по прогрессу.",
       e0date: "11.2026 - н.в. · частичная занятость",
       e1h: "Руководитель группы разработки",
       e1company: "АО «Консалт Плюс»",
@@ -45,24 +45,24 @@ const translations = {
         "Корпоративная MDM-платформа, разработанная с нуля для крупного заказчика под NDA: модульный монолит с микросервисами и асинхронным обменом через Kafka.",
       e2h: "DevOps-инженер - АО «Консалт Плюс»",
       e2b:
-        "CI/CD на GitLab CI, автоматизация развёртывания через Ansible и Docker Compose, PostgreSQL с резервным копированием, мониторинг на Prometheus, Grafana, Loki, Jaeger и Zabbix.",
+        "Выстраивал инфраструктуру и процесс поставки: CI/CD на GitLab CI, автоматизация развёртывания (Ansible, Docker Compose), резервное копирование и мониторинг.",
       e2date: "08.2023 - 03.2024",
       e3h: "DevOps-инженер - фриланс",
       e3b:
-        "Краткосрочные проекты: настройка CI/CD, контейнеризация на Docker, окружения на серверах Linux и Windows (IIS).",
+        "Краткосрочные проекты для заказчиков: настройка CI/CD и контейнеризация.",
       e3date: "10.2022 - 07.2023",
       e4h: "DevOps-инженер - Сбер",
       e4b:
-        "CI/CD и регулярная доставка релизов высоконагруженной корпоративной системы «Сенат», администрирование Linux/Windows, PostgreSQL и Redis, сквозной мониторинг.",
+        "Корпоративная система «Сенат» для руководства банка: выстраивал и автоматизировал релизный процесс высоконагруженной системы, обеспечивал стабильность контуров, снимал инфраструктурные блокеры команд.",
       e4date: "09.2019 - 09.2022",
     },
     impact: {
       title: "Ключевой вклад",
-      i1: "Вёл команду разработки из 12–18 человек от старта проекта до приёмки заказчиком; проект сдан в согласованный срок.",
-      i2: "Вместе с менеджером проекта и бизнес-аналитиками планировал спринты и релизы: оценки, риски, зависимости, изменения требований. Двухнедельные спринты с релизом по итогам каждого.",
-      i3: "Договаривался с бизнесом о реалистичном объёме на квартал на основе фактической velocity команды, в том числе перевёл крупную ML-функциональность в формат пилота.",
-      i4: "Участвовал в согласовании требований с заказчиком, проводил демонстрации готового функционала.",
-      i5: "Руководил разработкой интеграций с внешними системами: адаптер на Apache Airflow, REST API, Kafka, прямые подключения к БД.",
+      i1: "Реализация проекта: вёл проект от старта разработки до приёмки заказчиком с кросс-функциональной командой из 12–18 человек; проект сдан в согласованный срок.",
+      i2: "Планирование и Scrum: отвечал за план поставки — оценка, спринты, релизы, роадмап совместно с владельцем продукта. Двухнедельные спринты, около 50 релизов за 2 года.",
+      i3: "Риски и приоритизация: управлял рисками, зависимостями и изменениями требований; согласовывал объём с бизнесом по фактической velocity — например, перевёл крупную ML-функциональность в формат пилота.",
+      i4: "Стейкхолдеры: участвовал в согласовании требований с заказчиком, проводил демонстрации готового функционала руководству и заказчику.",
+      i5: "Оптимизация процессов: выстроил CI/CD и автоматическое развёртывание; руководил разработкой интеграций с внешними системами (Airflow, REST API, Kafka).",
     },
     projects: {
       title: "Проекты",
@@ -75,14 +75,14 @@ const translations = {
       title: "Навыки",
       pm: "Управление проектами",
       pmText:
-        "Scrum - планирование спринтов и релизов - оценка задач - риски и зависимости - управление изменениями требований - демонстрации заказчику",
+        "Управление проектами - Scrum - Kanban - планирование спринтов и релизов - роадмап - оценка задач - риск-менеджмент - приоритизация - управление изменениями требований - управление стейкхолдерами - оптимизация процессов",
       tools: "Инструменты",
-      toolsText: "Jira - Confluence - Gantt / роадмапы",
+      toolsText: "Jira - Confluence - Gantt - AI-агенты (Claude Code и др.)",
       tech: "Технический бэкграунд",
       techText:
-        "CI/CD (GitLab CI, Ansible) - Docker, Docker Swarm, OpenShift - PostgreSQL, SQL - Kafka, Airflow, REST API - микросервисная архитектура - Prometheus, Grafana, Zabbix - Linux, Windows Server",
+        "SDLC - CI/CD (GitLab CI, Ansible) - Docker, OpenShift - PostgreSQL, SQL - Kafka, Airflow, REST API - микросервисная архитектура - Linux, Windows Server",
       languages: "Языки",
-      languagesText: "Русский - родной; английский - свободно читаю техническую документацию",
+      languagesText: "Русский - родной; английский - B1, свободно читаю техническую документацию",
     },
     education: {
       title: "Образование",
@@ -117,7 +117,7 @@ const translations = {
       name: "Aleksandr Takzhanov",
       role: "Project Manager",
       lead:
-        "I lead development teams from the start of a project to delivery: planning, priorities, risks and agreements with the business, backed by a strong engineering background.",
+        "I run projects from kickoff to delivery: planning, priorities, risks and agreements with the business, backed by a strong engineering background.",
       location: "Serbia",
       availability: "Remote or relocation; any employment type",
     },
@@ -130,14 +130,14 @@ const translations = {
     profile: {
       title: "Profile",
       body:
-        "Project Manager with a background in leading development: for two years I led a team of 12–18 people and took a corporate platform from the start to client acceptance on the agreed schedule. Currently a part-time Project Manager at a game studio.",
+        "Project manager with a background in enterprise software development. For two years I was responsible for delivering an MDM platform: led a cross-functional team of 12–18 people, set up the delivery process — two-week sprints with regular releases, CI/CD, planning based on actual velocity — and brought the project to client acceptance on the agreed schedule. Currently running a project at a game studio (part-time).",
       target:
-        "I want to lead projects rather than a development team: own the whole project — timeline, scope, risks and stakeholder alignment. Role: Project Manager or Delivery Manager.",
+        "Focus: end-to-end project management and process improvement — timeline, scope, risks and stakeholder management. Role: Project Manager or Delivery Manager.",
     },
     experience: {
       title: "Experience",
       e0h: "Project Manager - Next Genium",
-      e0b: "Game development studio building titles for PC and consoles. Project details under NDA.",
+      e0b: "Game development studio, PC and console titles (details under NDA). Run the backlog and sprint planning, coordinate art, development and game design, report on progress.",
       e0date: "Nov 2026 - present · part-time",
       e1h: "Development Team Lead",
       e1company: "Consult Plus JSC",
@@ -146,24 +146,24 @@ const translations = {
         "Corporate MDM platform built from scratch for a large client under NDA: modular monolith with microservices and asynchronous messaging via Kafka.",
       e2h: "DevOps Engineer - Consult Plus JSC",
       e2b:
-        "CI/CD on GitLab CI, deployment automation with Ansible and Docker Compose, PostgreSQL with backups, monitoring with Prometheus, Grafana, Loki, Jaeger and Zabbix.",
+        "Built infrastructure and the delivery process: CI/CD on GitLab CI, deployment automation (Ansible, Docker Compose), backups and monitoring.",
       e2date: "Aug 2023 - Mar 2024",
       e3h: "DevOps Engineer - Freelance",
       e3b:
-        "Short-term projects: CI/CD setup, containerization with Docker, environments on Linux and Windows (IIS) servers.",
+        "Short-term client projects: CI/CD setup and containerization.",
       e3date: "Oct 2022 - Jul 2023",
       e4h: "DevOps Engineer - Sber",
       e4b:
-        "CI/CD and regular release delivery for the high-load Senat corporate system, Linux/Windows, PostgreSQL and Redis administration, end-to-end monitoring.",
+        "“Senat” decision-support system for the bank’s management: built and automated the release process of a high-load system, kept environments stable, removed infrastructure blockers for teams.",
       e4date: "Sep 2019 - Sep 2022",
     },
     impact: {
       title: "Selected impact",
-      i1: "Led a development team of 12–18 people from project start to client acceptance; the project was delivered on the agreed schedule.",
-      i2: "Planned sprints and releases with the project manager and business analysts: estimates, risks, dependencies and requirement changes. Two-week sprints with a release at the end of each.",
-      i3: "Negotiated realistic quarterly scope with the business using the team's actual velocity, including moving a large ML feature into a pilot.",
-      i4: "Took part in agreeing requirements with the client and ran demos of delivered features.",
-      i5: "Led development of integrations with external systems: Apache Airflow adapter, REST API, Kafka, direct database connections.",
+      i1: "Project delivery: ran the project from the start of development to client acceptance with a cross-functional team of 12–18 people; delivered on the agreed schedule.",
+      i2: "Planning and Scrum: owned the delivery plan — estimation, sprints, releases, roadmap together with the product owner. Two-week sprints, about 50 releases in 2 years.",
+      i3: "Risks and prioritization: managed risks, dependencies and requirement changes; negotiated scope with the business based on actual velocity — e.g. moved a large ML feature into a pilot.",
+      i4: "Stakeholders: took part in agreeing requirements with the client, ran demos of delivered features for management and the client.",
+      i5: "Process improvement: set up CI/CD and automated deployment; led development of integrations with external systems (Airflow, REST API, Kafka).",
     },
     projects: {
       title: "Projects",
@@ -176,14 +176,14 @@ const translations = {
       title: "Skills",
       pm: "Project management",
       pmText:
-        "Scrum - Sprint and release planning - Estimation - Risks and dependencies - Requirements change management - Client demos",
+        "Project management - Scrum - Kanban - Sprint and release planning - Roadmap - Estimation - Risk management - Prioritization - Requirements change management - Stakeholder management - Process improvement",
       tools: "Tools",
-      toolsText: "Jira - Confluence - Gantt / roadmaps",
+      toolsText: "Jira - Confluence - Gantt - AI agents (Claude Code etc.)",
       tech: "Technical background",
       techText:
-        "CI/CD (GitLab CI, Ansible) - Docker, Docker Swarm, OpenShift - PostgreSQL, SQL - Kafka, Airflow, REST API - Microservice architecture - Prometheus, Grafana, Zabbix - Linux, Windows Server",
+        "SDLC - CI/CD (GitLab CI, Ansible) - Docker, OpenShift - PostgreSQL, SQL - Kafka, Airflow, REST API - Microservice architecture - Linux, Windows Server",
       languages: "Languages",
-      languagesText: "Russian - native; English - fluent reading of technical documentation",
+      languagesText: "Russian - native; English - B1, fluent reading of technical documentation",
     },
     education: {
       title: "Education",
