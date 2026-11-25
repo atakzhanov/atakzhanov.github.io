@@ -44,7 +44,13 @@ const PROJECTS_I18N = {
           "Разделил продукт на офлайн-клиент (источник правды по балансу) и веб-сервис.",
           "Пересматривал решения по мере роста: SQLite для одной семьи, затем PostgreSQL для веб-сервиса.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["ss-subjects.webp", "Выбор предмета"],
+          ["ss-task.webp", "Задание: время зарабатывается ответами"],
+          ["ss-home.webp", "Игры и разрешённые сайты"],
+          ["ss-pin.webp", "Первый запуск: PIN родителя для выхода из оболочки"],
+        ],
       },
       {
         id: "skill-rpg",
@@ -184,7 +190,13 @@ const PROJECTS_I18N = {
           "Split the product into an offline client (source of truth for the balance) and a web service.",
           "Revisited decisions as it grew: SQLite for one family, then PostgreSQL for the web service.",
         ],
-        shots: [],
+        shotsWide: true,
+        shots: [
+          ["ss-subjects.webp", "Choosing a subject"],
+          ["ss-task.webp", "A task: time is earned by answers"],
+          ["ss-home.webp", "Games and allowed sites"],
+          ["ss-pin.webp", "First run: parent PIN to leave the shell"],
+        ],
       },
       {
         id: "skill-rpg",
