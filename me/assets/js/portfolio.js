@@ -75,7 +75,7 @@ const translations = {
       title: "Навыки",
       pm: "Управление проектами",
       pmText:
-        "Управление проектами - Scrum - Kanban - планирование спринтов и релизов - роадмап - оценка задач - риск-менеджмент - приоритизация - управление изменениями требований - управление стейкхолдерами - оптимизация процессов",
+        "Управление проектами - Agile - Scrum - Kanban - планирование спринтов и релизов - роадмап - оценка задач - риск-менеджмент - приоритизация - управление изменениями требований - управление стейкхолдерами - оптимизация процессов",
       tools: "Инструменты",
       toolsText: "Jira - Confluence - Gantt - AI-агенты (Claude Code и др.)",
       tech: "Технический бэкграунд",
@@ -176,7 +176,7 @@ const translations = {
       title: "Skills",
       pm: "Project management",
       pmText:
-        "Project management - Scrum - Kanban - Sprint and release planning - Roadmap - Estimation - Risk management - Prioritization - Requirements change management - Stakeholder management - Process improvement",
+        "Project management - Agile - Scrum - Kanban - Sprint and release planning - Roadmap - Estimation - Risk management - Prioritization - Requirements change management - Stakeholder management - Process improvement",
       tools: "Tools",
       toolsText: "Jira - Confluence - Gantt - AI agents (Claude Code etc.)",
       tech: "Technical background",
