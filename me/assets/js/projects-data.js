@@ -70,10 +70,12 @@ const PROJECTS_I18N = {
           "После исследования рынка развернул продукт от заглушек к функциональности: фокус на практиках и сериях.",
         ],
         shots: [
-          ["rpg-main.webp", "Главная (дизайн-макет)"],
-          ["rpg-character.webp", "Персонаж (дизайн-макет)"],
-          ["rpg-skill.webp", "Навык и испытание ранга (дизайн-макет)"],
-          ["rpg-roadmap.webp", "Программа развития (дизайн-макет)"],
+          ["rpg-today.webp", "Сегодня: практики дня и прогресс"],
+          ["rpg-practices.webp", "Активные практики и челленджи"],
+          ["rpg-catalog.webp", "Каталог практик"],
+          ["rpg-practice-new.webp", "Новая практика: уровень, расписание, срок"],
+          ["rpg-plan.webp", "План: задачи и методы приоритизации"],
+          ["rpg-profile.webp", "Профиль: персонаж, характеристики, серия"],
         ],
       },
       {
@@ -118,7 +120,13 @@ const PROJECTS_I18N = {
           "Распознавание перенёс на телефон, серверу оставил то, что телефон не может: синхронизацию, перевод, бэкапы.",
           "Сомнительный чек уходит на ручную проверку, а не угадывается.",
         ],
-        shots: [],
+        shots: [
+          ["mc-receipts.webp", "Чеки за месяц (демо-данные)"],
+          ["mc-dashboard.webp", "Отчёты: сумма, средний чек, категории"],
+          ["mc-dashboard-2.webp", "Категории и динамика расходов"],
+          ["mc-receipt.webp", "Чек из официального журнала по QR"],
+          ["mc-capture.webp", "Съёмка чека и ввод по QR"],
+        ],
       },
       {
         id: "grail",
@@ -216,10 +224,12 @@ const PROJECTS_I18N = {
           "After market research, pivoted from placeholders to real features with a focus on practices and streaks.",
         ],
         shots: [
-          ["rpg-main.webp", "Home (design mockup)"],
-          ["rpg-character.webp", "Character (design mockup)"],
-          ["rpg-skill.webp", "Skill and rank trial (design mockup)"],
-          ["rpg-roadmap.webp", "Learning program (design mockup)"],
+          ["rpg-today.webp", "Today: daily practices and progress"],
+          ["rpg-practices.webp", "Active practices and challenges"],
+          ["rpg-catalog.webp", "Practice catalog"],
+          ["rpg-practice-new.webp", "New practice: level, schedule, duration"],
+          ["rpg-plan.webp", "Plan: tasks and prioritization methods"],
+          ["rpg-profile.webp", "Profile: character, stats, streak"],
         ],
       },
       {
@@ -264,7 +274,13 @@ const PROJECTS_I18N = {
           "Moved recognition onto the phone; the server keeps what a phone can't do: sync, translation, backups.",
           "A doubtful receipt goes to manual review instead of being guessed.",
         ],
-        shots: [],
+        shots: [
+          ["mc-receipts.webp", "Receipts for the month (demo data)"],
+          ["mc-dashboard.webp", "Reports: total, average receipt, categories"],
+          ["mc-dashboard-2.webp", "Categories and spending trend"],
+          ["mc-receipt.webp", "A receipt from the official registry via QR"],
+          ["mc-capture.webp", "Capturing a receipt and QR input"],
+        ],
       },
       {
         id: "grail",
