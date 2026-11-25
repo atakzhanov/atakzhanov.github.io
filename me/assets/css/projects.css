@@ -1,0 +1,224 @@
+/* Personal projects page. Palette matches portfolio.css. */
+:root {
+  --page: #e9eeeb;
+  --surface: #ffffff;
+  --ink: #202622;
+  --muted: #626b66;
+  --line: #d4dcd7;
+  --brand: #176b54;
+  --brand-soft: #e3f0eb;
+  --accent: #b9573e;
+  --link: #285d86;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Manrope, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--link); }
+
+.pp-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* Header */
+.pp-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.pp-back {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.pp-lang { display: flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.pp-lang button {
+  border: 0;
+  background: var(--surface);
+  color: var(--muted);
+  font: 600 0.72rem "JetBrains Mono", monospace;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+.pp-lang button.active { background: var(--brand); color: #fff; }
+
+.pp-kicker {
+  margin: 0;
+  color: var(--accent);
+  font: 600 0.72rem "JetBrains Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pp-header h1 {
+  margin: 0.3rem 0 0.6rem;
+  font-family: "Bricolage Grotesque", Manrope, sans-serif;
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  line-height: 1.05;
+}
+
+.pp-lead {
+  max-width: 46rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.pp-badge {
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: 0.55rem 0.85rem;
+  border-left: 3px solid var(--brand);
+  background: var(--brand-soft);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Approach */
+.pp-approach {
+  margin-top: 2.2rem;
+  padding: 1.3rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.pp-approach h2,
+.pp-card h2 {
+  margin: 0;
+  font-family: "Bricolage Grotesque", Manrope, sans-serif;
+  font-size: 1.3rem;
+}
+
+.pp-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.9rem 1.4rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.pp-steps li {
+  position: relative;
+  padding-left: 2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.pp-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font: 600 0.7rem/1.4rem "JetBrains Mono", monospace;
+  text-align: center;
+}
+
+.pp-steps b { display: block; color: var(--ink); font-size: 0.86rem; }
+
+/* Project cards */
+.pp-list { display: grid; gap: 1.4rem; margin-top: 1.4rem; }
+
+.pp-card {
+  padding: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.pp-card-head { display: flex; gap: 1rem; align-items: center; }
+
+.pp-icon {
+  flex: 0 0 auto;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--page);
+  object-fit: contain;
+  display: grid;
+  place-items: center;
+  font: 800 1.2rem "Bricolage Grotesque", sans-serif;
+  color: var(--brand);
+}
+
+.pp-tagline { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.88rem; }
+
+.pp-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.pp-meta li {
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  background: var(--page);
+  color: var(--ink);
+  font: 500 0.7rem "JetBrains Mono", monospace;
+}
+.pp-meta li.status { background: var(--brand); color: #fff; }
+
+.pp-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.6rem;
+  margin-top: 1.1rem;
+}
+
+.pp-body h3 {
+  margin: 0 0 0.35rem;
+  color: var(--brand);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pp-body ul { margin: 0; padding-left: 1.05rem; }
+.pp-body li { margin: 0.18rem 0; color: var(--muted); font-size: 0.82rem; }
+
+.pp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.pp-gallery figure { margin: 0; }
+.pp-gallery img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: block;
+}
+.pp-gallery figcaption { margin-top: 0.3rem; color: var(--muted); font-size: 0.72rem; }
+.pp-gallery-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 0.75rem; }
+
+.pp-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 700px) {
+  .pp-shell { padding: 1.3rem 1rem 2rem; }
+  .pp-body { grid-template-columns: 1fr; }
+}

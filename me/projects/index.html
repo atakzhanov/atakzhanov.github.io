@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Персональные проекты | Александр Такжанов</title>
+    <meta name="description" content="Personal projects by Aleksandr Takzhanov, built end to end by him together with AI agents." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&amp;family=Manrope:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/projects.css?v=20261125" />
+  </head>
+  <body>
+    <div class="pp-shell">
+      <header class="pp-header">
+        <div class="pp-topbar">
+          <a class="pp-back" href="../" data-i18n="nav.back">← Резюме</a>
+          <div class="pp-lang" aria-label="Language switch">
+            <button type="button" data-lang-btn="en">EN</button>
+            <button type="button" data-lang-btn="ru">RU</button>
+          </div>
+        </div>
+        <p class="pp-kicker" data-i18n="header.kicker">Александр Такжанов · Project Manager</p>
+        <h1 data-i18n="header.title">Персональные проекты</h1>
+        <p class="pp-lead" data-i18n="header.lead"></p>
+        <p class="pp-badge" data-i18n="header.badge"></p>
+      </header>
+
+      <section class="pp-approach" aria-labelledby="approach-title">
+        <h2 id="approach-title" data-i18n="approach.title">Как я работаю с AI-агентами</h2>
+        <ol class="pp-steps" id="approach-steps"></ol>
+      </section>
+
+      <main id="project-list" class="pp-list"></main>
+
+      <footer class="pp-footer">
+        <span data-i18n="footer.text"></span>
+        <a href="mailto:mr.takzhanov@gmail.com">mr.takzhanov@gmail.com</a>
+        <a href="https://t.me/moodsouth" target="_blank" rel="noopener">Telegram</a>
+      </footer>
+    </div>
+
+    <script src="../assets/js/projects-data.js?v=20261125"></script>
+    <script src="../assets/js/projects.js?v=20261125"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+// Content of the personal projects page (RU/EN). Rendering lives in projects.js.
+const IMG = "../assets/img/projects/";
+
+const PROJECTS_I18N = {
+  ru: {
+    title: "Персональные проекты | Александр Такжанов",
+    nav: { back: "← Резюме" },
+    header: {
+      kicker: "Александр Такжанов · Project Manager",
+      title: "Персональные проекты",
+      lead:
+        "Проекты, которые я придумал и довёл до работающих версий в свободное время. Это практика того, чем я хочу заниматься как PM: формулировать задачу, принимать решения по объёму и рискам и доводить работу до результата.",
+      badge:
+        "Все проекты персональные: полностью реализованы мной вместе с AI-агентами, без команды. Код закрыт — здесь описания и экраны.",
+    },
+    approach: {
+      title: "Как я работаю с AI-агентами",
+      steps: [
+        ["Сначала документ", "Концепция, требования, решения и дорожная карта лежат в репозитории до первой строки кода."],
+        ["Контекст для агентов", "Правила проекта в CLAUDE.md / AGENTS.md, архитектура и спецификации: агент работает в рамках принятых решений."],
+        ["Риск первым", "Технический спайк на самое рискованное место, затем короткие вертикальные срезы."],
+        ["Проверка, а не доверие", "Тесты, e2e-прогоны и приёмка на реальной машине. Что не сходится — назад в работу."],
+        ["Документация — часть продукта", "Руководство пользователя, архитектура и журнал изменений обновляются вместе с кодом."],
+      ],
+    },
+    labels: { built: "Что сделано", decisions: "Решения и подход", shotsNote: "Дизайн-макеты экранов" },
+    footer: { text: "Подробнее о любом проекте расскажу на собеседовании." },
+    projects: [
+      {
+        id: "studentshell",
+        name: "StudentShell",
+        icon: "icon-studentshell.png",
+        tagline: "Оболочка на компьютере ученика: время в играх зарабатывается решением учебных заданий, а не покупается.",
+        meta: ["Рабочий MVP", "2026", "Rust", "Tauri 2", "Vue 3", "PostgreSQL", "Windows API"],
+        built: [
+          "Полноэкранная оболочка для Windows: следит за активным приложением и сворачивает игру, когда минуты кончились.",
+          "Экономика баланса: минуты за задания, награда зависит от уровня ученика, уровень подстраивается по результатам.",
+          "Курсы заданий с теорией, генератор задач по математике, отчёты для куратора.",
+          "Веб-сервис для кураторов: аккаунты, привязка устройств, синхронизация, публичная библиотека курсов с модерацией и рейтингом.",
+        ],
+        decisions: [
+          "Начал с технического спайка на главный риск: можно ли надёжно отслеживать и сворачивать процессы в Windows.",
+          "Шёл срезами: сначала баланс и одна дисциплина без панели куратора, дальше — по бэклогу.",
+          "Разделил продукт на офлайн-клиент (источник правды по балансу) и веб-сервис.",
+          "Пересматривал решения по мере роста: SQLite для одной семьи, затем PostgreSQL для веб-сервиса.",
+        ],
+        shots: [],
+      },
+      {
+        id: "skill-rpg",
+        name: "Skill RPG",
+        icon: "icon-skill-rpg.png",
+        tagline: "Приложение, где навыки прокачиваются в реальной жизни: тренировки дают опыт, клубы — гильдии, встречи — рейды.",
+        meta: ["Прототип", "2026", "Expo / React Native", "TypeScript", "Supabase", "Rust", "Android"],
+        built: [
+          "Персонаж с характеристиками, уровнями и титулами; опыт за практику по формуле с защитой от гринда.",
+          "Подтверждённый опыт отдельно от самоотчёта: множители за способ подтверждения, лимиты самоотчёта.",
+          "Практики и челленджи с сериями, квесты дня, курсы, клубы, встречи и чаты.",
+          "Вход и данные на Supabase, работа без сети, нативное Android-приложение.",
+        ],
+        decisions: [
+          "Концепция, решения и дорожная карта ведутся в документах до кода.",
+          "Экраны сначала проверял на дизайн-макетах, потом реализовывал.",
+          "После исследования рынка развернул продукт от заглушек к функциональности: фокус на практиках и сериях.",
+        ],
+        shots: [
+          ["rpg-main.webp", "Главная"],
+          ["rpg-character.webp", "Персонаж"],
+          ["rpg-skill.webp", "Навык и испытание ранга"],
+          ["rpg-roadmap.webp", "Программа развития"],
+        ],
+      },
+      {
+        id: "mangaka",
+        name: "Mangaka Studio",
+        icon: "icon-mangaka.png",
+        tagline: "Десктоп-приложение — конвейер «комикс → мультфильм»: персонажи, сценарий, раскадровка, шотлист и анимация с AI-сервисами.",
+        meta: ["В разработке", "2026", "Rust", "Tauri 2", "Leptos (WASM)", "ComfyUI"],
+        built: [
+          "База персонажей, проработка и дизайн внешности с AI, визуальный стиль проекта.",
+          "Сценарий главы по сценам, раскадровка комикса, арт панелей, вёрстка и экспорт страниц.",
+          "Шотлист вручную, из текста и из комикса; первая версия motion-comic.",
+          "Изоляция проектов, очередь задач, e2e-прогоны всего конвейера.",
+        ],
+        decisions: [
+          "«Сделать или купить»: сравнил готовые AI-платформы и выбрал свой инструмент под регулярное производство.",
+          "Дорожная карта по этапам производства: вселенная → сценарий → комикс → анимация.",
+          "По итогам живого прогона ввёл библиотеку ассетов, чтобы кадры выглядели последовательно.",
+        ],
+        shots: [],
+      },
+      {
+        id: "market-control",
+        name: "Market Control",
+        icon: "icon-market-control.png",
+        tagline: "Учёт семейных расходов по чекам: фото или QR чека превращается в позиции, цены и категории, а из них — отчёты. Всё работает дома, без облака.",
+        meta: ["Используется дома", "2026", "Python / FastAPI", "SQLite", "React PWA", "Kotlin", "OCR", "Ollama"],
+        built: [
+          "Сначала QR: точные данные из официального журнала чеков; без QR — локальное распознавание текста.",
+          "Ошибки распознавания исправляются по арифметике самого чека; автоприём только если суммы сходятся.",
+          "Категории: выученные правила, ключевые слова, локальная языковая модель.",
+          "PWA и нативное Android-приложение работают без сервера и синхронизируются с ним.",
+        ],
+        decisions: [
+          "Приватность: ни облака, ни внешних AI — сервер на домашнем ПК, модель локальная.",
+          "Распознавание перенёс на телефон, серверу оставил то, что телефон не может: синхронизацию, перевод, бэкапы.",
+          "Сомнительный чек уходит на ручную проверку, а не угадывается.",
+        ],
+        shots: [],
+      },
+      {
+        id: "grail",
+        name: "Grail",
+        icon: "",
+        tagline: "Веб-приложение для анализа криптовалютного рынка: индикаторы, бэктест стратегий, виртуальные счета и лаборатория ML-моделей.",
+        meta: ["Личный инструмент", "2026", "Python", "SQLite", "scikit-learn", "Chronos-Bolt", "WebSocket"],
+        built: [
+          "График в реальном времени с индикаторами и автоматической сводкой: тренд, сигналы, уровни.",
+          "Бэктест 6 стратегий с комиссиями, стоп-лоссом и метриками: просадка, Шарп, профит-фактор.",
+          "Лаборатория моделей: 5 типов, сравнение по качеству и бэктесту, дообучение по расписанию.",
+          "Виртуальные счета и боты с лимитами риска для проверки моделей на новых данных.",
+        ],
+        decisions: [
+          "Новая версия модели становится активной, только если она не хуже текущей.",
+          "Все прогнозы записываются и сверяются с фактом — честная оценка вместо красивых кривых.",
+          "Лимиты риска у ботов: доля капитала, стоп-лосс, дневной лимит, остановка после серии ошибок.",
+        ],
+        shots: [],
+      },
+    ],
+  },
+  en: {
+    title: "Personal projects | Aleksandr Takzhanov",
+    nav: { back: "← Resume" },
+    header: {
+      kicker: "Aleksandr Takzhanov · Project Manager",
+      title: "Personal projects",
+      lead:
+        "Projects I came up with and took to working versions in my own time. They are practice for what I want to do as a PM: frame the problem, make scope and risk decisions, and drive the work to a result.",
+      badge:
+        "All projects are personal: built end to end by me together with AI agents, no team. The code is private — here are descriptions and screens.",
+    },
+    approach: {
+      title: "How I work with AI agents",
+      steps: [
+        ["Document first", "Concept, requirements, decisions and roadmap live in the repository before the first line of code."],
+        ["Context for agents", "Project rules in CLAUDE.md / AGENTS.md, architecture and specs: the agent works within decisions already made."],
+        ["Risk first", "A technical spike on the riskiest part, then short vertical slices."],
+        ["Verify, don't trust", "Tests, end-to-end runs and acceptance on a real machine. Anything that doesn't add up goes back."],
+        ["Docs are part of the product", "User guide, architecture and changelog are updated together with the code."],
+      ],
+    },
+    labels: { built: "What's built", decisions: "Decisions and approach", shotsNote: "Screen design mockups" },
+    footer: { text: "Happy to walk through any of these in an interview." },
+    projects: [
+      {
+        id: "studentshell",
+        name: "StudentShell",
+        icon: "icon-studentshell.png",
+        tagline: "A shell on the student's computer: game time is earned by solving study tasks, not bought.",
+        meta: ["Working MVP", "2026", "Rust", "Tauri 2", "Vue 3", "PostgreSQL", "Windows API"],
+        built: [
+          "Full-screen shell for Windows: tracks the active app and minimizes the game when the minutes run out.",
+          "Balance economy: minutes for tasks, rewards scaled to the student's level, level adapts to results.",
+          "Task courses with theory, a math task generator, reports for the curator.",
+          "Web service for curators: accounts, device pairing, sync, a public course library with moderation and ratings.",
+        ],
+        decisions: [
+          "Started with a technical spike on the main risk: can processes on Windows be tracked and minimized reliably.",
+          "Worked in slices: first the balance and one subject without a curator panel, then from the backlog.",
+          "Split the product into an offline client (source of truth for the balance) and a web service.",
+          "Revisited decisions as it grew: SQLite for one family, then PostgreSQL for the web service.",
+        ],
+        shots: [],
+      },
+      {
+        id: "skill-rpg",
+        name: "Skill RPG",
+        icon: "icon-skill-rpg.png",
+        tagline: "An app where skills level up in real life: workouts give XP, clubs are guilds, meetups are raids.",
+        meta: ["Prototype", "2026", "Expo / React Native", "TypeScript", "Supabase", "Rust", "Android"],
+        built: [
+          "A character with stats, levels and titles; XP for practice by a formula with anti-grind protection.",
+          "Verified XP kept apart from self-reports: multipliers by verification method, self-report limits.",
+          "Practices and challenges with streaks, daily quests, courses, clubs, meetups and chats.",
+          "Sign-in and data on Supabase, offline mode, a native Android app.",
+        ],
+        decisions: [
+          "Concept, decisions and roadmap are kept in documents before code.",
+          "Checked screens on design mockups first, then implemented them.",
+          "After market research, pivoted from placeholders to real features with a focus on practices and streaks.",
+        ],
+        shots: [
+          ["rpg-main.webp", "Home"],
+          ["rpg-character.webp", "Character"],
+          ["rpg-skill.webp", "Skill and rank trial"],
+          ["rpg-roadmap.webp", "Learning program"],
+        ],
+      },
+      {
+        id: "mangaka",
+        name: "Mangaka Studio",
+        icon: "icon-mangaka.png",
+        tagline: "A desktop app — a comic-to-animation pipeline: characters, script, storyboard, shot list and animation with AI services.",
+        meta: ["In progress", "2026", "Rust", "Tauri 2", "Leptos (WASM)", "ComfyUI"],
+        built: [
+          "Character database, AI-assisted character development and design, the project's visual style.",
+          "Chapter script by scenes, comic storyboard, panel art, page layout and export.",
+          "Shot list by hand, from text and from the comic; a first motion-comic version.",
+          "Isolated projects, a task queue, end-to-end runs of the whole pipeline.",
+        ],
+        decisions: [
+          "Build vs buy: compared ready-made AI platforms and chose my own tool for recurring production.",
+          "Roadmap by production stage: world → script → comic → animation.",
+          "After a live run, introduced an asset library so frames stay consistent.",
+        ],
+        shots: [],
+      },
+      {
+        id: "market-control",
+        name: "Market Control",
+        icon: "icon-market-control.png",
+        tagline: "Household spending from receipts: a photo or QR of a receipt becomes items, prices and categories, then reports. Runs at home, no cloud.",
+        meta: ["In use at home", "2026", "Python / FastAPI", "SQLite", "React PWA", "Kotlin", "OCR", "Ollama"],
+        built: [
+          "QR first: exact data from the official receipt registry; without a QR, local text recognition.",
+          "Recognition errors are fixed using the receipt's own arithmetic; auto-accept only when totals match.",
+          "Categories: learned rules, keywords, a local language model.",
+          "PWA and a native Android app work without the server and sync with it.",
+        ],
+        decisions: [
+          "Privacy: no cloud and no external AI — the server is a home PC, the model runs locally.",
+          "Moved recognition onto the phone; the server keeps what a phone can't do: sync, translation, backups.",
+          "A doubtful receipt goes to manual review instead of being guessed.",
+        ],
+        shots: [],
+      },
+      {
+        id: "grail",
+        name: "Grail",
+        icon: "",
+        tagline: "A web app for crypto market analysis: indicators, strategy backtests, virtual accounts and an ML model lab.",
+        meta: ["Personal tool", "2026", "Python", "SQLite", "scikit-learn", "Chronos-Bolt", "WebSocket"],
+        built: [
+          "Real-time chart with indicators and an automatic summary: trend, signals, levels.",
+          "Backtests of 6 strategies with fees, stop-loss and metrics: drawdown, Sharpe, profit factor.",
+          "Model lab: 5 model types, comparison by quality and backtest, scheduled retraining.",
+          "Virtual accounts and bots with risk limits to test models on new data.",
+        ],
+        decisions: [
+          "A new model version goes live only if it is no worse than the current one.",
+          "Every forecast is logged and checked against reality — honest evaluation instead of pretty curves.",
+          "Bot risk limits: capital share, stop-loss, daily loss limit, stop after a run of errors.",
+        ],
+        shots: [],
+      },
+    ],
+  },
+};

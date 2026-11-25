@@ -67,35 +67,9 @@ const translations = {
     projects: {
       title: "Проекты",
       intro:
-        "Собственные продукты, которые я веду от идеи до работающей версии: формулирую требования, принимаю решения по архитектуре и приоритетам, а разработку веду с AI-агентами.",
-      labels: { role: "Моя роль", result: "Результат", ai: "AI-процесс" },
-      studentshell: {
-        meta: "MVP · Rust, Tauri, Vue, SQLite · 2026",
-        desc:
-          "Десктоп-система для учеников: время на игры зарабатывается решением учебных задач, а куратор (родитель или репетитор) управляет правилами и курсами.",
-        role:
-          "Сформулировал концепцию и требования. Начал с технического спайка на главный риск — отслеживание и блокировку процессов в Windows, затем вёл разработку короткими срезами по бэклогу. Пересматривал решения при изменении условий: например, заменил PostgreSQL на встроенную SQLite для локального сценария.",
-        result:
-          "Работающий MVP: экономика баланса, курсы задач с теорией, адаптация уровня ученика, отчёты, публичная библиотека курсов с модерацией и рейтингом, веб-сервис для кураторов с синхронизацией.",
-        ai: "Разработка с AI-агентами Claude. Спецификация, архитектура, руководство пользователя и инструкция по развёртыванию ведутся в репозитории.",
-      },
-      mangaka: {
-        meta: "В разработке · Rust, Tauri, Leptos · 2026",
-        desc:
-          "Десктоп-приложение — производственный конвейер для превращения собственного комикса в аниме-эпизоды с помощью AI-сервисов.",
-        role:
-          "Сравнил готовые AI-платформы с собственной разработкой и выбрал свой инструмент, так как производство будет регулярным. Спроектировал архитектуру и определил первый срез — базу персонажей.",
-        result: "Ранняя стадия: архитектура, дорожная карта и первый срез в работе.",
-        ai: "Разработка с AI-агентами Claude. Видение, дорожная карта, архитектура и журнал изменений ведутся в репозитории.",
-      },
-      site: {
-        meta: "Claude Code · GitHub Pages · GitHub Actions",
-        desc: "Этот сайт и резюме в PDF на русском и английском.",
-        role:
-          "Перевёл исходники резюме с LaTeX на HTML со сборкой PDF через headless Chrome, обновил сайт и настроил сборку в CI.",
-        result: "Одна точка правды для резюме: правка в HTML — новые PDF и сайт.",
-        ai: "Всё сделано через Claude Code: от правок контента до коммитов и публикации.",
-      },
+        "Персональные проекты, которые я полностью сделал сам вместе с AI-агентами: от идеи и требований до работающей версии.",
+      names: "StudentShell · Skill RPG · Mangaka Studio · Market Control · Grail",
+      link: "Все проекты с описаниями и экранами →",
     },
     skills: {
       title: "Навыки",
@@ -194,35 +168,9 @@ const translations = {
     projects: {
       title: "Projects",
       intro:
-        "My own products, which I take from idea to a working version: I define requirements, make architecture and priority decisions, and run development with AI agents.",
-      labels: { role: "My role", result: "Result", ai: "AI workflow" },
-      studentshell: {
-        meta: "MVP · Rust, Tauri, Vue, SQLite · 2026",
-        desc:
-          "A desktop system for students: game time is earned by solving study tasks, while a curator (parent or tutor) manages the rules and courses.",
-        role:
-          "Defined the concept and requirements. Started with a technical spike on the main risk — tracking and blocking processes on Windows — then ran development in short slices from a backlog. Revisited decisions as conditions changed, e.g. replaced PostgreSQL with embedded SQLite for the local scenario.",
-        result:
-          "Working MVP: balance economy, task courses with theory, adaptive student level, reports, a public course library with moderation and ratings, a web service for curators with sync.",
-        ai: "Built with Claude AI agents. Spec, architecture, user guide and deployment guide are kept in the repository.",
-      },
-      mangaka: {
-        meta: "In progress · Rust, Tauri, Leptos · 2026",
-        desc:
-          "A desktop app — a production pipeline for turning my own comic into anime-style episodes with AI services.",
-        role:
-          "Compared ready-made AI platforms with building my own tool and chose to build, since production will be recurring. Designed the architecture and defined the first slice — the character database.",
-        result: "Early stage: architecture and roadmap done, first slice in progress.",
-        ai: "Built with Claude AI agents. Vision, roadmap, architecture and changelog are kept in the repository.",
-      },
-      site: {
-        meta: "Claude Code · GitHub Pages · GitHub Actions",
-        desc: "This site and the PDF resumes in Russian and English.",
-        role:
-          "Moved the resume sources from LaTeX to HTML with PDF builds via headless Chrome, updated the site and set up the CI build.",
-        result: "One source of truth for the resume: edit the HTML and get new PDFs and site.",
-        ai: "Done end to end with Claude Code, from content edits to commits and publishing.",
-      },
+        "Personal projects I built end to end myself together with AI agents: from idea and requirements to a working version.",
+      names: "StudentShell · Skill RPG · Mangaka Studio · Market Control · Grail",
+      link: "All projects with descriptions and screens →",
     },
     skills: {
       title: "Skills",
